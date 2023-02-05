@@ -19,12 +19,6 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'public'),
     hot: true,
   },
-  plugins: [
-    isDevelopment && new ReactRefreshWebpackPlugin(),  
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public', 'index.html')
-    })
-  ].filter(Boolean),
   module: {
     rules: [
       {
